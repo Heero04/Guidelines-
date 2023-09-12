@@ -1,0 +1,106 @@
+SQL Guidelines
+1. Setting Up a Database
+To create a new database:
+
+
+CREATE DATABASE database_name;
+To use an existing database:
+
+
+USE database_name;
+2. Creating Tables
+To create a new table:
+
+
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
+3. Inserting Data
+To insert a single row:
+
+
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+To insert multiple rows:
+
+
+INSERT INTO table_name (column1, column2, ...)
+VALUES
+    (value1, value2, ...),
+    (value3, value4, ...),
+    ...;
+4. Reading Data
+To select all columns:
+
+
+SELECT * FROM table_name;
+To select specific columns:
+
+
+SELECT column1, column2, ... FROM table_name;
+With conditions:
+
+
+SELECT * FROM table_name WHERE condition;
+5. Updating Data
+To update data:
+
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+6. Deleting Data
+To delete all rows:
+
+
+DELETE FROM table_name;
+To delete specific rows:
+
+
+DELETE FROM table_name WHERE condition;
+7. Joining Tables
+Inner Join:
+
+
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+Left Join:
+
+
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+8. Aggregating Data
+To count rows:
+
+
+SELECT COUNT(column) FROM table_name;
+To find the average:
+
+SELECT AVG(column) FROM table_name;
+9. Sorting Data
+To sort in ascending order:
+
+
+SELECT * FROM table_name
+ORDER BY column ASC;
+To sort in descending order:
+
+
+SELECT * FROM table_name
+ORDER BY column DESC;
+10. Dropping Tables and Databases
+To drop a table:
+
+
+DROP TABLE table_name;
+To drop a database:
+
+DROP DATABASE database_name;
+
+These are just the basics, but they should give you a good start in working with SQL databases.
